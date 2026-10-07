@@ -8,10 +8,20 @@
         /*Element Selector*/
         p{
             color:green;
+            border: 1px solid black;
         }
+        .box {
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                margin: 10px;
+                 border: 2px solid #000;
+                box-sizing: border-box; 
+}
         /*ID Selector*/
         #intro{
             color:blue;
+            border: 1px solid black;
         }
         /*Class Selector*/
         .note{
@@ -20,7 +30,7 @@
     </style>
 </head>
 <body>
-    <h1> This is my heading</h1>
+    <h1 class="box"> This is my heading</h1>
     <p id="intro" class="note">This is my paragraph</p>
 
     <p style="color: purple;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
