@@ -8,24 +8,30 @@
         /*Element Selector*/
         p{
             color:green;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+        div +p {
+            color: yellow;
         }
         .box {
-                width: 200px;
+                /* width: 200px;
                 height: 100px;
                 padding: 20px;
-                margin: 10px;
+                /* margin: 10px; 
                  border: 2px solid #000;
-                box-sizing: border-box; 
+                box-sizing: border-box;  */
 }
         /*ID Selector*/
         #intro{
             color:blue;
-            border: 1px solid black;
+            /* width: 200px;
+            height: 100px;
+            border: 1px solid black;  */
         }
         /*Class Selector*/
         .note{
-            color:red;
+            color:aqua;
+            background-color: red;
         }
     </style>
 </head>
@@ -34,7 +40,16 @@
     <p id="intro" class="note">This is my paragraph</p>
 
     <p style="color: purple;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p id="intro">This is another paragraph.</p>
+    <p class="note">This is another paragraph.</p>
+    <div>
+        <p>Child 1</p>
+        <div>
+            <p>Child 2</p>
+            <strong><p>Strong P</p></strong>
+        </div>
+        <span><p>SPan P</p></span>
+    </div>
+    <p> Just another paragraph.</p>
     
 </body>
 </html>
