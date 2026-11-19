@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.circle1 {
+    animation: animation1 4s infinite;
+}
+
+.circle2 {
+    animation: animation2 4s infinite;
+}
+
+.circle3 {
+    animation: animation3 4s infinite;
+}
+
+@keyframes animation1 {
+    0% { background: #4CA1AF; left: 50px; top: 0px; }
+    25% { background: #834d9b; left: 200px; top: 33px; }
+    50% { background: #2C7744; left: 200px; top: 100px; }
+    75% { background: #5614B0; left: 300px; top: 200px; }
+    100% { background: #fd746c; left: 43px; top: 0px; }
+}
+
+@keyframes animation2 {
+    0% { background: #4CA1AF; left: 0px; top: 0px; }
+    25% { background: #834d9b; left: 200px; top: 0px; }
+    50% { background: #2C7744; left: 100px; top: 200px; }
+    75% { background: #5614B0; left: 300px; top: 100px; }
+    100% { background: #fd746c; left: 50px; top: 0px; }
+}
+
+@keyframes animation3 {
+    0% { background: #4CA1AF; left: 0px; top: 100px; }
+    25% { background: #834d9b; left: 100px; top: 0px; }
+    50% { background: #2C7744; left: 200px; top: 100px; }
+    75% { background: #5614B0; left: 300px; top: 200px; }
+    100% { background: #fd746c; left: 88px; top: 59px; }
+}
+
+body {
+    background-color: #111;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+
+</body>
+</html>
